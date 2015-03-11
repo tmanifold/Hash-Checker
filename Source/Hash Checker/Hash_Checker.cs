@@ -59,53 +59,55 @@ namespace Hash_Checker
             txtHashTextBox.ForeColor = System.Drawing.Color.Black;
             HashAlgorithm alg;
 
-            string type = cmbHashTypeComboBox.SelectedItem.ToString();
-
-            switch (type)
-            {
-                case "MD5":
-                    {
-                        alg = Algorithms.MD5;
-                        break;
-                    }
-                case "SHA1":
-                    {
-                        alg = Algorithms.SHA1;
-                        break;
-                    }
-                case "SHA256":
-                    {
-                        alg = Algorithms.SHA256;
-                        break;
-                    }
-                case "SHA384":
-                    {
-                        alg = Algorithms.SHA384;
-                        break;
-                    }
-                case "SHA512":
-                    {
-                        alg = Algorithms.SHA512;
-                        break;
-                    }
-                case "RIPEMD160":
-                    {
-                        alg = Algorithms.RIPEMD160;
-                        break;
-                    }
-                default:
-                    {
-                        alg = Algorithms.MD5;
-                        break;
-                    }
-                    
-            }
-
             try
             {
+                string type = cmbHashTypeComboBox.SelectedItem.ToString();
+
+                switch (type)
+                {
+                    case "MD5":
+                        {
+                            alg = Algorithms.MD5;
+                            break;
+                        }
+                    case "SHA1":
+                        {
+                            alg = Algorithms.SHA1;
+                            break;
+                        }
+                    case "SHA256":
+                        {
+                            alg = Algorithms.SHA256;
+                            break;
+                        }
+                    case "SHA384":
+                        {
+                            alg = Algorithms.SHA384;
+                            break;
+                        }
+                    case "SHA512":
+                        {
+                            alg = Algorithms.SHA512;
+                            break;
+                        }
+                    case "RIPEMD160":
+                        {
+                            alg = Algorithms.RIPEMD160;
+                            break;
+                        }
+                    default:
+                        {
+                            alg = Algorithms.MD5;
+                            break;
+                        }
+
+                }
+
+
                 txtHashTextBox.Text = GetHashFromFile(hashfile, alg);
             }
             catch (System.ArgumentNullException) { }
+            catch (System.NullReferenceException) { }
 
             if (txtHashCheckTextBox.Text.ToUpper() == txtHashTextBox.Text)
             {
