@@ -1,9 +1,0 @@
-C:\Projects\Hash Checker\Hash Checker\bin\Debug\Hash Checker.exe.config
-C:\Projects\Hash Checker\Hash Checker\bin\Debug\Hash Checker.exe
-C:\Projects\Hash Checker\Hash Checker\bin\Debug\Hash Checker.pdb
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash Checker.csprojResolveAssemblyReference.cache
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash_Checker.frmHashChekerForm.resources
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash_Checker.Properties.Resources.resources
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash Checker.csproj.GenerateResource.Cache
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash Checker.exe
-C:\Projects\Hash Checker\Hash Checker\obj\Debug\Hash Checker.pdb
